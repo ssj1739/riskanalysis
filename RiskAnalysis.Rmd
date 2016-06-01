@@ -86,14 +86,13 @@ AgeANDSex2Risk <- function(x){
     age <- x[3]
     return(AgeANDSex2Risk.table[age, sex])
 }
+```
 
-
-
+### Diagnosis-based Risk Adjustment
 
 ```
 
-
-## Applying risk adjustment formula to 
+## Applying risk adjustment formula to simulated data
 ```{r}
 age.sex_risk <- apply(PatientData, MARGIN = 1, FUN = AgeANDSex2Risk)
 
