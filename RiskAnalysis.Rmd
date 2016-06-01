@@ -33,11 +33,11 @@ For now, I'm only dealing with adults between the ages of 21-64 out of convenien
 
 ```{r}
 ### Generating sample data:
-patient.ids <- sample(1:10000, size=1000, replace=F)
+patient.ids <- sample(1:10000, size=1000, replace=FALSE)
 
 patient.ages <- sample(21:80, size=1000, replace=T)
 
-patient.sexes <- as.factor(sample(1:2, size=1000, replace=T)) # 1 if male, 2 if female
+patient.sexes <- as.factor(sample(c("M", "F"), size=1000, replace=T)) # 1 if male, 2 if female
 
 icd10s <- unique(hcc2icd10$ICD10)
 
@@ -81,24 +81,23 @@ F <- c(rep(0.433, 4), sapply(c(0.548, 0.656, 0.76, 0.839, 0.878, 1.013, 1.054, 1
 AgeANDSex2Risk.table <-
     data.frame(M, F, row.names = 21:64)
 
-AgeANDSex2Risk <- function(age, sex){
-    
-    maleLiabEsts.21_65 <- c(rep(0.258, 4), sapply(c(0.278, 0.338, 0.413, 0.487, 0.581, 0.737, 0.863, 1.028), rep, 5))
-    if(sex==1){
-        if(age %in% 21:24)
-            return(0.258)
-        else if(age %in% 25:29)
-            return(0.278)
-        else if(age %in% 30:34)
-            return(0.413)
-        else if(age %in% 35:39)
-            return(0.487)
-        else if
-    } # if male
-}}
+AgeANDSex2Risk <- function(x){
+    sex <- x[2]
+    age <- x[3]
+    return(AgeANDSex2Risk.table[age, sex])
+}
+
+
+
+
 ```
 
 
+## Applying risk adjustment formula to 
+```{r}
+age.sex_risk <- apply(PatientData, MARGIN = 1, FUN = AgeANDSex2Risk)
 
+
+```
 
 
