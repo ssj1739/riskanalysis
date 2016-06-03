@@ -1,0 +1,33 @@
+HCC Code,Variable Label,Count,Estimate,Estimate,Estimate,Estimate,Estimate
+HCC001,HIV/AIDS,"20,936",5.485,4.972,4.740,4.740,4.749
+HCC002,"Septicemia, Sepsis, Systemic Inflammatory Response Syndrome/Shock","24,605",13.696,13.506,13.429,13.503,13.529
+HCC003,"Central Nervous System Infections, Except Viral Meningitis","4,988",7.277,7.140,7.083,7.117,7.129
+HCC004,Viral or Unspecified Meningitis,"3,029",4.996,4.730,4.621,4.562,4.550
+HCC006,Opportunistic Infections,"5,367",9.672,9.549,9.501,9.508,9.511
+HCC008,Metastatic Cancer,"32,336",25.175,24.627,24.376,24.491,24.526
+HCC009,"Lung, Brain, and Other Severe Cancers, Including Pediatric Acute Lymphoid Leukemia","25,034",11.791,11.377,11.191,11.224,11.235
+HCC010,Non-Hodgkin`s Lymphomas and Other Cancers and Tumors,"25,876",6.432,6.150,6.018,5.983,5.970
+HCC011,"Colorectal, Breast (Age < 50), Kidney, and Other Cancers","55,824",5.961,5.679,5.544,5.500,5.483
+HCC012,"Breast (Age 50+) and Prostate Cancer, Benign/Uncertain Brain Tumors, and Other Cancers and Tumors","145,403",3.509,3.294,3.194,3.141,3.121
+HCC013,"Thyroid Cancer, Melanoma, Neurofibromatosis, and Other Cancers and Tumors","37,443",1.727,1.559,1.466,1.353,1.315
+HCC018,Pancreas Transplant Status/Complications,551,9.593,9.477,9.411,9.434,9.439
+HCC019,Diabetes with Acute Complications,"8,078",1.331,1.199,1.120,1.000,0.957
+HCC020,Diabetes with Chronic Complications,"159,961",1.331,1.199,1.120,1.000,0.957
+HCC021,Diabetes without Complication,"645,595",1.331,1.199,1.120,1.000,0.957
+HCC023,Protein-Calorie Malnutrition,"11,514",14.790,14.790,14.786,14.862,14.883
+HCC026,Mucopolysaccharidosis,44,2.335,2.198,2.130,2.071,2.052
+HCC027,Lipidoses and Glycogenosis,"2,235",2.335,2.198,2.130,2.071,2.052
+HCC028,"Congenital Metabolic Disorders, Not Elsewhere Classified",N/A,N/A,N/A,N/A,N/A,N/A
+HCC029,"Amyloidosis, Porphyria, and Other Metabolic Disorders","3,243",2.335,2.198,2.130,2.071,2.052
+HCC030,"Adrenal, Pituitary, and Other Significant Endocrine Disorders","44,828",2.335,2.198,2.130,2.071,2.052
+HCC034,Liver Transplant Status/Complications,"2,223",18.445,18.197,18.105,18.165,18.188
+HCC035,End-Stage Liver Disease,"7,032",6.412,6.102,5.974,6.001,6.012
+HCC036,Cirrhosis of Liver,"9,703",2.443,2.255,2.177,2.137,2.125
+HCC037,Chronic Hepatitis,"21,169",1.372,1.228,1.152,1.071,1.046
+HCC038,"Acute Liver Failure/Disease, Including Neonatal Hepatitis","4,096",4.824,4.634,4.548,4.547,4.550
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,

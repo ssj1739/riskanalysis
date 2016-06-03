@@ -1,0 +1,128 @@
+HCC Code,Variable Label,Count,Estimate,Estimate,Estimate,Estimate,Estimate,
+HCC001,HIV/AIDS,256,2.956,2.613,2.421,2.228,2.166,
+HCC002,"Septicemia, Sepsis, Systemic Inflammatory Response Syndrome/Shock","1,943",17.309,17.142,17.061,17.081,17.088,
+HCC003,"Central Nervous System Infections, Except Viral Meningitis",911,12.636,12.409,12.296,12.313,12.319,
+HCC004,Viral or Unspecified Meningitis,909,3.202,3.004,2.896,2.750,2.702,
+HCC006,Opportunistic Infections,475,20.358,20.262,20.222,20.201,20.189,
+HCC008,Metastatic Cancer,888,34.791,34.477,34.307,34.306,34.300,
+HCC009,"Lung, Brain, and Other Severe Cancers, Including Pediatric Acute Lymphoid Leukemia","3,156",11.939,11.618,11.436,11.358,11.334,
+HCC010,Non-Hodgkin`s Lymphomas and Other Cancers and Tumors,"1,318",9.354,9.071,8.908,8.806,8.774,
+HCC011,"Colorectal, Breast (Age < 50), Kidney, and Other Cancers",606,3.689,3.480,3.337,3.188,3.143,
+HCC012,"Breast (Age 50+) and Prostate Cancer, Benign/Uncertain Brain Tumors, and Other Cancers and Tumors","2,448",3.308,3.084,2.954,2.814,2.769,
+HCC013,"Thyroid Cancer, Melanoma, Neurofibromatosis, and Other Cancers and Tumors","1,798",1.530,1.368,1.254,1.114,1.066,
+HCC018,Pancreas Transplant Status/Complications,8,18.933,18.476,18.264,18.279,18.289,S1
+HCC019,Diabetes with Acute Complications,"1,659",2.629,2.354,2.198,1.904,1.799,G1
+HCC020,Diabetes with Chronic Complications,"1,881",2.629,2.354,2.198,1.904,1.799,G1
+HCC021,Diabetes without Complication,"14,042",2.629,2.354,2.198,1.904,1.799,G1
+HCC023,Protein-Calorie Malnutrition,"1,165",13.930,13.794,13.726,13.751,13.759,
+HCC026,Mucopoly-saccharidosis,70,6.177,5.867,5.696,5.642,5.625,G2
+HCC027,Lipidoses and Glycogenosis,256,6.177,5.867,5.696,5.642,5.625,G2
+HCC028,"Congenital Metabolic Disorders, Not Elsewhere Classified","1,691",6.177,5.867,5.696,5.642,5.625,G2
+HCC029,"Amyloidosis, Porphyria, and Other Metabolic Disorders",880,6.177,5.867,5.696,5.642,5.625,G2
+HCC030,"Adrenal, Pituitary, and Other Significant Endocrine Disorders","6,974",6.177,5.867,5.696,5.642,5.625,G2
+HCC034,Liver Transplant Status/Complications,241,18.322,18.048,17.922,17.898,17.888,
+HCC035,End-Stage Liver Disease,180,12.960,12.754,12.650,12.622,12.614,
+HCC036,Cirrhosis of Liver,58,1.177,1.027,0.920,0.871,0.833,H1
+HCC037,Chronic Hepatitis,494,1.177,1.027,0.920,0.807,0.775,H1
+HCC038,"Acute Liver Failure/Disease, Including Neonatal Hepatitis",192,6.255,6.092,6.003,5.972,5.966,
+HCC041,Intestine Transplant Status/Complications,20,106.169,106.704,106.991,107.180,107.222,
+HCC042,Peritonitis/Gastrointestinal Perforation/Necrotizing Entero-colitis,686,16.784,16.360,16.156,16.171,16.179,
+HCC045,Intestinal Obstruction,"2,934",5.715,5.451,5.307,5.210,5.178,
+HCC046,Chronic Pancreatitis,177,16.692,16.315,16.148,16.163,16.166,
+HCC047,Acute Pancreatitis/Other Pancreatic Disorders and Intestinal Malabsorption,"4,700",3.843,3.685,3.584,3.471,3.434,
+HCC048,Inflammatory Bowel Disease,"5,582",5.049,4.673,4.471,4.320,4.271,
+HCC054,Necrotizing Fasciitis,38,5.829,5.551,5.398,5.318,5.292,G3
+HCC055,Bone/Joint/Muscle Infections/Necrosis,"2,281",5.829,5.551,5.398,5.318,5.292,G3
+HCC056,Rheumatoid Arthritis and Specified Autoimmune Disorders,"5,270",2.689,2.473,2.327,2.171,2.122,
+HCC057,Systemic Lupus Erythematosus and Other Autoimmune Disorders,"1,566",1.397,1.249,1.139,0.996,0.951,
+HCC061,Osteogenesis Imperfecta and Other Osteodystrophies,431,1.536,1.410,1.311,1.211,1.183,G4
+HCC062,Congenital/Developmental Skeletal and Connective Tissue Disorders,"6,978",1.536,1.410,1.311,1.211,1.183,G4
+HCC063,Cleft Lip/Cleft Palate,"2,617",1.785,1.573,1.441,1.281,1.228,
+HCC064,"Major Congenital Anomalies of Diaphragm, Abdominal Wall, and Esophagus, Age < 2",N/A,N/A,N/A,N/A,N/A,N/A,
+HCC066,Hemophilia,477,46.388,45.839,45.551,45.541,45.535,
+HCC067,Myelodysplastic Syndromes and Myelofibrosis,76,29.387,29.168,29.063,29.075,29.078,G6
+HCC068,Aplastic Anemia,406,29.387,29.168,29.063,29.075,29.078,G6
+HCC069,"Acquired Hemolytic Anemia, Including Hemolytic Disease of Newborn",333,7.791,7.476,7.308,7.229,7.203,G7
+HCC070,Sickle Cell Anemia (Hb-SS),920,7.791,7.476,7.308,7.229,7.203,G7
+HCC071,Thalassemia Major,0,7.791,7.476,7.308,7.229,7.203,G7
+HCC073,Combined and Other Severe Immunodeficiencies,351,5.690,5.455,5.339,5.270,5.247,G8
+HCC074,Disorders of the Immune Mechanism,"3,060",5.690,5.455,5.339,5.270,5.247,G8
+HCC075,Coagulation Defects and Other Specified Hematological Disorders,"4,024",4.909,4.754,4.650,4.543,4.511,
+HCC081,Drug Psychosis,"1,268",4.067,3.816,3.693,3.596,3.566,G9
+HCC082,Drug Dependence,"3,258",4.067,3.816,3.693,3.596,3.566,G9
+HCC087,Schizophrenia,"1,278",5.536,5.127,4.916,4.775,4.730,
+HCC088,Major Depressive and Bipolar Disorders,"67,738",1.779,1.591,1.453,1.252,1.188,H2
+HCC089,"Reactive and Unspecified Psychosis, Delusional Disorders","1,113",1.779,1.591,1.453,1.252,1.188,H2
+HCC090,Personality Disorders,"1,172",0.935,0.832,0.723,0.511,0.441,H7
+HCC094,Anorexia/Bulimia Nervosa,"2,254",2.565,2.372,2.252,2.146,2.111,
+HCC096,"Prader-Willi, Patau, Edwards, and Autosomal Deletion Syndromes",977,3.606,3.347,3.239,3.201,3.189,
+HCC097,"Down Syndrome, Fragile X, Other Chromosomal Anomalies, and Congenital Malformation Syndromes","6,141",2.403,2.203,2.093,1.982,1.943,
+HCC102,Autistic Disorder,"12,355",1.673,1.500,1.372,1.177,1.112,
+HCC103,"Pervasive Developmental Disorders, Except Autistic Disorder","9,852",0.963,0.850,0.723,0.511,0.441,H7
+HCC106,Traumatic Complete Lesion Cervical Spinal Cord,23,18.394,18.224,18.156,18.210,18.228,"G10,H3"
+HCC107,Quadriplegia,369,18.394,18.224,18.156,18.210,18.228,"G10,H3"
+HCC108,Traumatic Complete Lesion Dorsal Spinal Cord,7,18.394,18.224,18.156,18.210,18.228,"G11,H3"
+HCC109,Paraplegia,249,18.394,18.224,18.156,18.210,18.228,"G11,H3"
+HCC110,Spinal Cord Disorders/Injuries,"1,149",4.668,4.416,4.287,4.181,4.150,
+HCC111,Amyotrophic Lateral Sclerosis and Other Anterior Horn Cell Disease,221,14.484,14.155,13.995,13.958,13.954,
+HCC112,Quadriplegic Cerebral Palsy,"1,640",5.717,5.367,5.223,5.251,5.262,
+HCC113,"Cerebral Palsy, Except Quadriplegic","4,923",1.899,1.672,1.557,1.447,1.412,
+HCC114,Spina Bifida and Other Brain/Spinal/ Nervous System Congenital Anomalies,"4,857",0.943,0.785,0.686,0.592,0.562,
+HCC115,Myasthenia Gravis/Myoneural Disorders and Guillain-Barre Syndrome/In-flammatory and Toxic Neuropathy,804,5.301,5.071,4.950,4.861,4.832,
+HCC117,Muscular Dystrophy,814,3.122,2.915,2.800,2.698,2.669,G12
+HCC118,Multiple Sclerosis,396,5.370,4.996,4.806,4.769,4.752,
+HCC119,"Parkinson`s, Huntington`s, and Spinocerebellar Disease, and Other Neurodegenerative Disorders",707,3.122,2.915,2.800,2.698,2.669,G12
+HCC120,Seizure Disorders and Convulsions,"30,366",2.188,2.012,1.882,1.702,1.644,
+HCC121,Hydrocephalus,"2,810",6.791,6.630,6.550,6.521,6.513,
+HCC122,"Non-Traumatic Coma, and Brain Compression/Anoxic Damage","1,617",9.073,8.882,8.788,8.753,8.735,
+HCC125,Respirator Dependence/ Tracheostomy Status,559,34.717,34.532,34.471,34.623,34.668,
+HCC126,Respiratory Arrest,76,14.998,14.772,14.669,14.691,14.696,G13
+HCC127,"Cardio-Respiratory Failure and Shock, Including Respiratory Distress Syndromes","4,132",14.998,14.772,14.669,14.691,14.696,G13
+HCC128,Heart Assistive Device/Artificial Heart,4,25.734,25.262,25.057,25.189,25.225,G14
+HCC129,Heart Transplant,211,25.734,25.262,25.057,25.189,25.225,G14
+HCC130,Congestive Heart Failure,"2,379",6.292,6.159,6.073,6.013,5.992,
+HCC131,Acute Myocardial Infarction,38,4.568,4.453,4.410,4.433,4.448,H4
+HCC132,Unstable Angina and Other Acute Ischemic Heart Disease,80,4.568,4.453,4.410,4.433,4.448,H4
+HCC135,"Heart Infection/In-flammation, Except Rheumatic",774,12.842,12.655,12.573,12.590,12.597,
+HCC137,Hypoplastic Left Heart Syndrome and Other Severe Congenital Heart Disorders,887,7.019,6.823,6.668,6.528,6.480,
+HCC138,Major Congenital Heart/Circulatory Disorders,"11,217",2.257,2.143,2.018,1.870,1.828,
+HCC139,"Atrial and Ventricular Septal Defects, Patent Ductus Arteriosus, and Other Congenital Heart/Circulatory Disorders","9,017",1.411,1.319,1.206,1.078,1.047,
+HCC142,Specified Heart Arrhythmias,"3,356",4.483,4.276,4.141,4.052,4.026,
+HCC145,Intracranial Hemorrhage,586,21.057,20.757,20.616,20.617,20.618,
+HCC146,Ischemic or Unspecified Stroke,321,8.498,8.373,8.324,8.360,8.363,
+HCC149,Cerebral Aneurysm and Arteriovenous Malformation,321,4.704,4.464,4.344,4.280,4.250,
+HCC150,Hemiplegia/Hemi-paresis,"1,228",5.561,5.404,5.334,5.315,5.310,H5
+HCC151,"Monoplegia, Other Paralytic Syndromes",292,5.561,5.404,5.334,5.315,5.310,H5
+HCC153,Atherosclerosis of the Extremities with Ulceration or Gangrene,111,10.174,9.937,9.799,9.688,9.641,H6
+HCC154,Vascular Disease with Complications,305,11.571,11.355,11.257,11.260,11.272,
+HCC156,Pulmonary Embolism and Deep Vein Thrombosis,768,13.894,13.661,13.557,13.591,13.604,
+HCC158,Lung Transplant Status/Complications,29,100.413,100.393,100.412,100.660,100.749,
+HCC159,Cystic Fibrosis,"1,306",13.530,13.006,12.743,12.739,12.742,
+HCC160,"Chronic Obstructive Pulmonary Disease, Including Bronchiectasis","2,679",0.521,0.458,0.354,0.215,0.175,G15
+HCC161,Asthma,"260,435",0.521,0.458,0.354,0.215,0.175,G15
+HCC162,Fibrosis of Lung and Other Lung Disorders,"1,385",5.812,5.657,5.555,5.472,5.450,
+HCC163,Aspiration and Specified Bacterial Pneumonias and Other Severe Lung Infections,"2,057",10.730,10.615,10.549,10.566,10.571,
+HCC183,Kidney Transplant Status,353,18.933,18.476,18.264,18.279,18.289,S1
+HCC184,End Stage Renal Disease,142,43.158,42.816,42.659,42.775,42.808,
+HCC187,"Chronic Kidney Disease, Stage 5",59,11.754,11.581,11.472,11.374,11.340,G16
+HCC188,"Chronic Kidney Disease, Severe (Stage 4)",90,11.754,11.581,11.472,11.374,11.340,G16
+HCC203,"Ectopic and Molar Pregnancy, Except with Renal Failure, Shock, or Embolism",308,1.191,1.042,0.917,0.674,0.590,G17
+HCC204,Miscarriage with Complications,110,1.191,1.042,0.917,0.674,0.590,G17
+HCC205,Miscarriage with No or Minor Complications,"1,477",1.191,1.042,0.917,0.674,0.590,G17
+HCC207,Completed Pregnancy With Major Complications,308,3.419,2.956,2.778,2.498,2.437,G18
+HCC208,Completed Pregnancy With Complications,"2,854",3.419,2.956,2.778,2.498,2.437,G18
+HCC209,Completed Pregnancy with No or Minor Complications,"5,174",3.419,2.956,2.778,2.498,2.437,G18
+HCC217,"Chronic Ulcer of Skin, Except Pressure","1,554",1.570,1.479,1.394,1.314,1.289,
+HCC226,Hip Fractures and Pathological Vertebral or Humerus Fractures,297,7.389,7.174,7.022,6.882,6.842,
+HCC227,"Pathological Fractures, Except of Vertebrae, Hip, or Humerus",674,2.353,2.244,2.128,1.965,1.912,
+HCC242,"Extremely Immature Newborns, Birthweight < 500 Grams",N/A,N/A,N/A,N/A,N/A,N/A,
+HCC243,"Extremely Immature Newborns, Including Birthweight 500–749 Grams",N/A,N/A,N/A,N/A,N/A,N/A,
+HCC244,"Extremely Immature Newborns, Including Birthweight 750–999 Grams",N/A,N/A,N/A,N/A,N/A,N/A,
+HCC245,"Premature Newborns, Including Birthweight 1000–1499 Grams",N/A,N/A,N/A,N/A,N/A,N/A,
+HCC246,"Premature Newborns, Including Birthweight 1500–1999 Grams",N/A,N/A,N/A,N/A,N/A,N/A,
+HCC247,"Premature Newborns, Including Birthweight 2000–2499 Grams",N/A,N/A,N/A,N/A,N/A,N/A,
+HCC248,"Other Premature, Low Birthweight, Malnourished, or Multiple Birth Newborns",N/A,N/A,N/A,N/A,N/A,N/A,
+HCC249,"Term or Post-Term Singleton Newborn, Normal or High Birthweight",N/A,N/A,N/A,N/A,N/A,N/A,
+HCC251,"Stem Cell, Including Bone Marrow, Transplant Status/Complications",324,30.558,30.485,30.466,30.522,30.538,
+HCC253,Artificial Openings for Feeding or Elimination,"2,006",14.410,14.247,14.197,14.340,14.383,
+HCC254,"Amputation Status, Lower Limb/Amputation Complications",95,10.174,9.937,9.799,9.688,9.641,H6
