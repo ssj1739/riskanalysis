@@ -15,8 +15,8 @@ Risk adjustment calculations are significant in terms of cost analysis and reduc
 To begin, I first load in the necessary data.  I am using the most current ICD-10 to HCC key available from CMS.  
 
 ```{r}
-hcc2icd10 <- read.csv("~/Documents/Valera/RiskAnalysis/HHS_HCC_TO_ICD10.csv")
-head(hcc2icd10)
+setwd("~/Documents/riskanalysis/")
+hcc2icd10 <- read.csv("HHS_HCC_TO_ICD10.csv") # Load in crosswalk table
 ```
 
 The data contains the following information: 
@@ -27,19 +27,29 @@ The data contains the following information:
 - HCC Code
 - Other specific data about code use
 
-We will be generating simulated patient data using ICD-10 codes of patients with 2 or more (up to 5)  comorbidities, and assessing risk for these patients.
+We will be generating simulated patient data using ICD-10 codes of patients with 2 or more (up to 5)  comorbidities, and assessing risk for these patients.  Patients are assigned ages, genders, ICD10 codes linked to diagnoses, and a plan 'metal'.  This refers to the HHS's designation for plan types, which include:
 
-For now, I'm only dealing with adults between the ages of 21-64 out of convenience and rapid prototyping, but this algorithm can be expanded to cover infants (0-1), children (2-20), and seniors (65+).
+- Platinum (1)
+- Gold (2)
+- Silver (3)
+- Bronze (4)
+- Catastrophic (5)
+
+For now, I'm only dealing with adults between the ages of 21-64 out of convenience and rapid prototyping, but this algorithm can be expanded to cover infants (0-1), children (2-20), and seniors (65+).  NOTE: Seniors are not covered under HHS, and therefore HCC-CMS would apply, using a different set risk calculations.
+
+All distributions are essentially random uniform, so they're not applicable to any actual risk calculation.  The main purpose of this exercise is to show the general workflow for risk calculation.
 
 ```{r}
 ### Generating sample data:
 patient.ids <- sample(1:10000, size=1000, replace=FALSE)
 
-patient.ages <- sample(21:80, size=1000, replace=T)
+patient.ages <- sample(2:80, size=1000, replace=T)
 
 patient.sexes <- as.factor(sample(c("M", "F"), size=1000, replace=T)) # 1 if male, 2 if female
 
-icd10s <- unique(hcc2icd10$ICD10)
+plan.metal <- sample(1:5, size=1000, replace=T)
+
+icd10s <- unique(hcc2icd10$ICD10) # sample from crosswalk table
 
 # everyone has 1 comorbidity
 morbidity1 <- sample(icd10s, size=1000, replace=T)  
@@ -62,39 +72,57 @@ morbidity5 <- sapply(sample(icd10s, size=1000, replace=T), function(x){
 })
 
 # Simulated Data:
-PatientData <- data.frame(patient.ids, patient.sexes, patient.ages, morbidity1, morbidity2, morbidity3, morbidity4, morbidity5)
-
-(head(PatientData))
+PatientData <- data.frame(patient.ids, patient.sexes, patient.ages, morbidity1, morbidity2, morbidity3, morbidity4, morbidity5, plan.metal)
 ```
 
-Now that the data has been simulated, I can use known HCC Risk Calculations to determine risk on each of these patients.  In order to do so, each value must be mapped with the corresponding liability value to determine whether or not the risk assessment of the patient is higher or lower than the normal.
+Now that the data has been simulated, I can use known HCC Risk Calculations to determine risk on each of these patients.  In order to do so, each value must be mapped with the corresponding liability value to determine whether or not the risk assessment of the patient is higher or lower than the normal (1).
 
-To calculate age/sex liability, we use the following function with conditionals.
+::: HOW DO WE CALCULATE RISKS? :::
 
 ### Age/Sex Risk Analysis
-(Assuming Platinum Plan liability with HCC-HMS population extrapolation)
 ```{r}
-M <- c(rep(0.258, 4), sapply(c(0.278, 0.338, 0.413, 0.487, 0.581, 0.737, 0.863, 1.028), rep, 5))
+age_sex.risk <- read.csv("~/Documents/riskanalysis/age-risk.csv", stringsAsFactors=FALSE)
+age_sex.risk <- age_sex.risk[1:26,]
+age_sex.risk$Count <- as.numeric(gsub(",", "", age_sex.risk$Count))
+age_sex.risk$Gender <- sapply(age_sex.risk$Variable.Label, function(x){return(as.character(strsplit(x, split=" ")[[1]][4]))})
 
-F <- c(rep(0.433, 4), sapply(c(0.548, 0.656, 0.76, 0.839, 0.878, 1.013, 1.054, 1.156), rep, 5))
+AgeRanges <- sapply(age_sex.risk$Variable.Label, function(x){return(as.character(strsplit(x, split=" ")[[1]][3]))})
 
-AgeANDSex2Risk.table <-
-    data.frame(M, F, row.names = 21:64)
+age_sex.risk$minAge <- sapply(AgeRanges, function(x){
+    as.numeric(sapply(x, strsplit, split="[–+]")[[1]][1])
+    }
+    )
+
+age_sex.risk$maxAge <- sapply(AgeRanges, function(x){
+    as.numeric(sapply(x, strsplit, split="[–+]")[[1]][2])
+    }
+    )
+
+age_sex.risk$maxAge[is.na(age_sex.risk$maxAge)] = 100
 
 AgeANDSex2Risk <- function(x){
-    sex <- x[2]
-    age <- x[3]
-    return(AgeANDSex2Risk.table[age, sex])
+    sex <- as.character(ifelse(x[2]=="M", "Male", "Female"))
+    age <- as.numeric(x[3])
+    metal <- as.numeric(x[9])+2
+    
+    risk <- age_sex.risk[age_sex.risk$Gender==sex & age_sex.risk$minAge<=age & age_sex.risk$maxAge>=age,metal]
+    
+    return(risk)
 }
 ```
 
 ### Diagnosis-based Risk Adjustment
 
+```{r}
+
 ```
+
 
 ## Applying risk adjustment formula to simulated data
 ```{r}
-age.sex_risk <- apply(PatientData, MARGIN = 1, FUN = AgeANDSex2Risk)
+age.sex_riskscores <- apply(PatientData, MARGIN = 1, FUN = AgeANDSex2Risk)
+
+
 
 
 ```
